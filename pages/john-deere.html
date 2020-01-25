@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tractors of the Past - John Deere</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', 'sans-serif';
+            box-sizing: border-box;
+        }
+        h5 {
+            margin: 0;
+        }
+
+        /*Header*/
+        .header {
+            overflow: hidden;
+            background-color: #F0803C;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        .header a {
+            float: left;
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 15px;
+        }
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0;
+        }
+        .header .logo img {
+            max-height: 30px;
+        }
+        .nav-item:hover {
+            background-color: #F2975F;
+            color: black;
+        }
+        .header-right {
+            float: right;
+        }
+        /*Dropdown list*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown button{
+            font-size: 18px;
+            line-height: 15px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 12px;
+            background-color: inherit;
+            margin: 0;
+        }
+        .drop-list {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .drop-list a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .drop-list a:hover {
+            background-color: #dddddd;
+        }
+        .dropdown:hover .drop-list {
+            display: block;
+        }
+
+
+
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        img {
+            max-width: 75%;
+        }
+
+        .timeline {
+            text-align: center;
+        }
+        .title {
+            display: inline-block;
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+        }
+        .timeline .title span {
+            display: inline-block;
+            padding-bottom: 6px;
+            border-bottom: 1px solid green;
+        }
+        .present .inner span {
+            border-top: 1px solid green;
+        }
+        .days {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .day {
+            width: 100%;
+            float: left;
+        }
+        .info {
+            position: relative;
+            float: left;
+            border-right: 1px solid green;
+            padding: 30px;
+            text-align: right;
+            width: 50%;
+        }
+        .date {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            padding: 30px;
+            text-align: left;
+            color: green;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+        .image {
+            margin-right: -30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .image img {
+            display: block;
+            float: right;
+        }
+
+        /*Underline half of info*/
+        .timeline .days .day .info:after {
+            content: "";
+            width: 50%;
+            display: inline-block;
+            height: 1px;
+            background: green;
+            position: absolute;
+            right: 0;
+        }
+
+
+        /*Arrange on alternating sides of center*/
+        .timeline .days .day:nth-child(odd) .info {
+            width: calc(50% + 1px);
+            float: right;
+            border-right: 0;
+            border-left: 1px solid green;
+            text-align: left;
+        }
+        .timeline .days .day:nth-child(odd) .info:after {
+            right: auto;
+            left: 0;
+        }
+        .timeline .days .day:nth-child(odd) .info .date {
+            left: auto;
+            right: 100%;
+            text-align: right;
+        }
+        .timeline .days .day:nth-child(odd) .info .image {
+            margin-right: auto;
+            margin-left: -30px;
+        }
+        .timeline .days .day:nth-child(odd) .info .image img {
+            float: left;
+        }
+        .timeline .days .day:nth-child(odd) .info .image .caption {
+            right: auto;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <a class="logo">
+        <h5><img src="../resources/images/logo.png"> Tractors of the Past</h5>
+    </a>
+    <div class="header-right">
+        <a class="nav-item" href="../index.html">Home</a>
+        <div class="dropdown">
+            <button class="btn">History</button>
+            <div class="drop-list">
+                <a>Case</a>
+                <a href="../pages/john-deere.html">John Deere</a>
+                <a>McCormick-Deering</a>
+                <a>Minneapolis-Moline</a>
+            </div>
+        </div>
+        <a class="nav-item">Contact</a>
+        <a class="nav-item" href="#about">Blog</a>
+    </div>
+</div>
+<!--END OF HEADER-->
+
+
+<div class="timeline">
+    <div class="title">
+        <div class="inner">
+            <span>History of John Deere</span>
+        </div>
+    </div>
+
+    <ul class="days">
+        <li class="day">
+            <div class="info">
+                <p>John Deere, born in 1804, opened a shop in Grand Detour, Illinois where he intended to work as a repairman for the village. Deere saw a need to produce a new type of plow, one that would prevent the rich midwestern soil from becoming stuck.
+                He fashioned a new plow from a steel saw blade and thus became the beginnings of John Deere in the agricultural business.</p>
+                <div class="date">1837</div>
+            </div>
+        </li>
+
+        <li class="day">
+            <div class="info">
+                <p>John Deere's work began to increase in popularity due to an innovative business model that saw John Deere produce plows before an order had been placed. This caused sales to rise exponentially as farmers could purchases and begin using a plow
+                in the same day. John Deere moved operations to Moline, Illinois in 1848 to gain access to the railroad and build a new factory where they would increase yearly plow production from 100 in 1842 to over 1000 in 1857.
+                John Deere and his stakeholders incorporated as Deere & Company in 1868, with John's son Charles as the primary stakeholder. Production of farm implements expanded to wagons, planters and cultivators through to the
+                beginning of the 20th century.</p>
+                <div class="date">1842 - 1900</div>
+            </div>
+        </li>
+
+        <li class="day">
+            <div class="info">
+                <div class="image">
+                    <img src="../resources/images/dain.jpg" alt="John Deere Dain All-Wheel Drive" />
+                </div>
+                <div class="date"><p>First Production Tractor</p></div>
+            </div>
+        </li>
+
+        <li class="day">
+            <div class="info">
+                <p>By the turn of the 20th century, Deere & Company was under pressure to move into the tractor business. Research and development began on an all-wheel drive tricycle tractor under the supervision of John Dain. This led to Deere & Company's first
+                production tractor, the Dain All-Wheel Drive. Price: $700.</p>
+                <div class="date">1916</div>
+            </div>
+        </li>
+
+        <li class="day">
+            <div class="info">
+                <p>Deere & Company purchases Waterloo Gasoline Engine Company who was producing the popular tractor, the Waterloo Boy. Production was continued on the Waterloo Boy until 1923 when John Deere introduced its first tractor under the brand John Deere.</p>
+                <div class="date">1918</div>
+            </div>
+        </li>
+
+        <li class="day">
+            <div class="info">
+                <div class="image">
+                    <img src="../resources/images/waterloo-boy.jpg" alt="Waterloo Boy" />
+                </div>
+                <div class="date"><p>The Waterloo Boy</p></div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="title present">
+        <div class="inner">
+            <span>Present</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

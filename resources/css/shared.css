@@ -1,3 +1,37 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+}
+h5 {
+    margin: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color: greenyellow;
+    padding: 10px;
+}
+.header a {
+    float: left;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 15px;
+}
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+}
+.header .logo img {
+    max-height: 30px;
+}
+.nav-item:hover {
+    background-color: lawngreen;
+    color: black;
+}
+.header-right {
+    float: right;
 }
