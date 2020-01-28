@@ -18,10 +18,10 @@ img {
 .timeline .title span {
     display: inline-block;
     padding-bottom: 6px;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid darkgray;
 }
 .present .inner span {
-    border-top: 1px solid green;
+    border-top: 1px solid darkgray;
 }
 .days {
     list-style-type: none;
@@ -35,7 +35,7 @@ img {
 .info {
     position: relative;
     float: left;
-    border-right: 1px solid green;
+    border-right: 1px solid darkgray;
     padding: 30px;
     text-align: right;
     width: 50%;
@@ -47,7 +47,7 @@ img {
     transform: translateY(-50%);
     padding: 30px;
     text-align: left;
-    color: green;
+    color: darkgray;
     font-size: 24px;
     white-space: nowrap;
 }
@@ -67,33 +67,33 @@ img {
     width: 50%;
     display: inline-block;
     height: 1px;
-    background: green;
+    background: darkgray;
     position: absolute;
     right: 0;
 }
 
 
 /*Arrange on alternating sides of center*/
-.timeline .days .day:nth-child(odd) .info {
+.day:nth-child(odd) .info {
     width: calc(50% + 1px);
     float: right;
     border-right: 0;
-    border-left: 1px solid green;
+    border-left: 1px solid darkgray;
     text-align: left;
 }
-.timeline .days .day:nth-child(odd) .info:after {
+.day:nth-child(odd) .info:after {
     right: auto;
     left: 0;
 }
-.timeline .days .day:nth-child(odd) .info .date {
+.day:nth-child(odd) .info .date {
     left: auto;
     right: 100%;
     text-align: left;
 }
-.timeline .days .day:nth-child(odd) .info .image {
+.day:nth-child(odd) .info .image {
     margin-right: auto;
     margin-left: -30px;
 }
-.timeline .days .day:nth-child(odd) .info .image img {
+.day:nth-child(odd) .info .image img {
     float: left;
 }
