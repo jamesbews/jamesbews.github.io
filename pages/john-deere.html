@@ -3,195 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Tractors of the Past - John Deere</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', 'sans-serif';
-            box-sizing: border-box;
-        }
-        h5 {
-            margin: 0;
-        }
-
-        /*Header*/
-        .header {
-            overflow: hidden;
-            background-color: #F0803C;
-            padding: 10px;
-            margin-bottom: 40px;
-        }
-        .header a {
-            float: left;
-            color: black;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 15px;
-        }
-        .header a.logo {
-            font-size: 25px;
-            font-weight: bold;
-            padding: 0;
-        }
-        .header .logo img {
-            max-height: 30px;
-        }
-        .nav-item:hover {
-            background-color: #F2975F;
-            color: black;
-        }
-        .header-right {
-            float: right;
-        }
-        /*Dropdown list*/
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-        .dropdown button{
-            font-size: 18px;
-            line-height: 15px;
-            border: none;
-            outline: none;
-            color: black;
-            padding: 12px;
-            background-color: inherit;
-            margin: 0;
-        }
-        .drop-list {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .drop-list a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        .drop-list a:hover {
-            background-color: #dddddd;
-        }
-        .dropdown:hover .drop-list {
-            display: block;
-        }
-
-
-
-
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
-
-        img {
-            max-width: 75%;
-        }
-
-        .timeline {
-            text-align: center;
-        }
-        .title {
-            display: inline-block;
-            font-size: 36px;
-            font-weight: bold;
-            position: relative;
-        }
-        .timeline .title span {
-            display: inline-block;
-            padding-bottom: 6px;
-            border-bottom: 1px solid green;
-        }
-        .present .inner span {
-            border-top: 1px solid green;
-        }
-        .days {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        .day {
-            width: 100%;
-            float: left;
-        }
-        .info {
-            position: relative;
-            float: left;
-            border-right: 1px solid green;
-            padding: 30px;
-            text-align: right;
-            width: 50%;
-        }
-        .date {
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            transform: translateY(-50%);
-            padding: 30px;
-            text-align: left;
-            color: green;
-            font-size: 24px;
-            white-space: nowrap;
-        }
-        .image {
-            margin-right: -30px;
-            position: relative;
-            overflow: hidden;
-        }
-        .image img {
-            display: block;
-            float: right;
-        }
-
-        /*Underline half of info*/
-        .timeline .days .day .info:after {
-            content: "";
-            width: 50%;
-            display: inline-block;
-            height: 1px;
-            background: green;
-            position: absolute;
-            right: 0;
-        }
-
-
-        /*Arrange on alternating sides of center*/
-        .timeline .days .day:nth-child(odd) .info {
-            width: calc(50% + 1px);
-            float: right;
-            border-right: 0;
-            border-left: 1px solid green;
-            text-align: left;
-        }
-        .timeline .days .day:nth-child(odd) .info:after {
-            right: auto;
-            left: 0;
-        }
-        .timeline .days .day:nth-child(odd) .info .date {
-            left: auto;
-            right: 100%;
-            text-align: right;
-        }
-        .timeline .days .day:nth-child(odd) .info .image {
-            margin-right: auto;
-            margin-left: -30px;
-        }
-        .timeline .days .day:nth-child(odd) .info .image img {
-            float: left;
-        }
-        .timeline .days .day:nth-child(odd) .info .image .caption {
-            right: auto;
-            left: 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../resources/css/shared.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/timeline.css">
 </head>
 <body>
 <div class="header">
-    <a class="logo">
+    <a href="../index.html" class="logo">
         <h5><img src="../resources/images/logo.png"> Tractors of the Past</h5>
     </a>
     <div class="header-right">
@@ -199,7 +16,7 @@
         <div class="dropdown">
             <button class="btn">History</button>
             <div class="drop-list">
-                <a>Case</a>
+                <a href="../pages/case.html">Case</a>
                 <a href="../pages/john-deere.html">John Deere</a>
                 <a>McCormick-Deering</a>
                 <a>Minneapolis-Moline</a>
@@ -250,14 +67,14 @@
         <li class="day">
             <div class="info">
                 <p>By the turn of the 20th century, Deere & Company was under pressure to move into the tractor business. Research and development began on an all-wheel drive tricycle tractor under the supervision of John Dain. This led to Deere & Company's first
-                production tractor, the Dain All-Wheel Drive. Price: $700.</p>
+                production tractor, the Dain All-Wheel Drive. Original sale price $700.</p>
                 <div class="date">1916</div>
             </div>
         </li>
 
         <li class="day">
             <div class="info">
-                <p>Deere & Company purchases Waterloo Gasoline Engine Company who was producing the popular tractor, the Waterloo Boy. Production was continued on the Waterloo Boy until 1923 when John Deere introduced its first tractor under the brand John Deere.</p>
+                <p>Deere & Company purchases Waterloo Gasoline Engine Company who was producing the popular tractor, the Waterloo Boy. The companies founder, John Froelich, was credited with invention of the first gas powered tractor in the late 1800's.</p>
                 <div class="date">1918</div>
             </div>
         </li>
@@ -274,7 +91,7 @@
         <li class="day">
             <div class="info">
                 <p>Deere & Company produce the first tractor under the brand John Deere, the Model D. The tractor was a hit with farmers in the midwest, boasting 27 horsepower and almost 2000 pounds lighter than its predecessor.
-                    Later models replaced the steel wheels with rubber to add comfort and safety for an added road gear. The Model D still holds the longest production run, from 1923 - 1953. Original sale price: $1000</p>
+                    Later models replaced the steel wheels with rubber to add comfort and safety for an added road gear. The Model D still holds the longest production run, from 1923 - 1953, originally selling for $1000</p>
                 <div class="date">1923</div>
             </div>
         </li>
@@ -363,7 +180,7 @@
                 <div class="image">
                     <img src="../resources/images/jd/4440.jpg" alt="4440 John Deere" />
                 </div>
-                <div class="date"><p>Model B</p></div>
+                <div class="date"><p>John Deere 4440</p></div>
             </div>
         </li>
 
