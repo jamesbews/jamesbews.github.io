@@ -192,3 +192,30 @@ th, td {
     background-color: #dddddd;
 }
 
+/*Footer*/
+.footer {
+    padding: 20px 10px;
+    background-color: whitesmoke;
+}
+.list-inline {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.list-inline-item {
+    padding: 0 10px;
+    display: inline;
+}
+.list-inline-item a {
+    color: darkgray;
+    text-decoration: none;
+}
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: darkgray;
+
+}
