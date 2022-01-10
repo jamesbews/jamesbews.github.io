@@ -2442,10 +2442,13 @@ body {
   .btn-google:hover, .btn-google:focus, .btn-google:active {
     color: #d73925; }
 
-.btn-linkedin {
-  color: #0077B5; }
-  .btn-linkedin:hover, .btn-linkedin:focus, .btn-linkedin:active {
-    color: #00669c; }
+
+.btn-linkedin:hover, .btn-linkedin:focus, .btn-linkedin:active {
+  background-color: #00669c; }
+
+.btn-github:hover, .btn-github:focus, .btn-github:active {
+  background-color: #161b22
+}
 
 .nav-tabs {
   border: 0;
