@@ -1,1 +1,5 @@
-
+.image-helper {
+    display: inline-block;
+    height: 25%;
+    vertical-align: middle;
+}
